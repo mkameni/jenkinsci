@@ -15,6 +15,7 @@ RUN apt-get update && \
     stable" && \
     apt-get update && \
     apt-get -y install docker-ce && \
+    apt-get -y install python-pip && \
     usermod -a -G docker jenkins
 
 USER jenkins
